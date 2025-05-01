@@ -35,7 +35,7 @@ namespace LibBezierCurve
 
         private IEnumerable<double> ResolveT(double controlPoint1, double controlPoint2, double controlPoint3, double controlPoint4, double value)
         {
-            // 二元一次方程标准形式
+            // 三元一次方程标准形式
 
             var a = -controlPoint1 + 3 * controlPoint2 - 3 * controlPoint3 + controlPoint4;
             var b = 3 * (controlPoint1 - 2 * controlPoint2 + controlPoint3);
